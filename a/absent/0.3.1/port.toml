@@ -1,0 +1,8 @@
+[package]
+  url = "https://github.com/rvarago/absent.git"
+  ref = "0.3.1"
+  depth = 1
+
+[[build_configs]]
+  build_system = "cmake"
+  options = ["-DBUILD_TESTS=OFF"]
