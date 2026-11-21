@@ -1,0 +1,154 @@
+warning: in the working copy of 'CMakeLists.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/3fd/broker/CMakeLists.txt b/3fd/broker/CMakeLists.txt
+index ce631b2..ca9cfd3 100644
+--- a/3fd/broker/CMakeLists.txt
++++ b/3fd/broker/CMakeLists.txt
+@@ -19,7 +19,7 @@ add_definitions(
+ )
+ 
+ # NDEBUG when release mode:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+ endif()
+diff --git a/3fd/core/CMakeLists.txt b/3fd/core/CMakeLists.txt
+index 40e9eae..bab1118 100644
+--- a/3fd/core/CMakeLists.txt
++++ b/3fd/core/CMakeLists.txt
+@@ -19,7 +19,7 @@ add_definitions(
+ )
+ 
+ # NDEBUG when release mode:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+ endif()
+diff --git a/3fd/opencl/CMakeLists.txt b/3fd/opencl/CMakeLists.txt
+index 6b474d8..aef1162 100644
+--- a/3fd/opencl/CMakeLists.txt
++++ b/3fd/opencl/CMakeLists.txt
+@@ -19,7 +19,7 @@ add_definitions(
+ )
+ 
+ # NDEBUG when release mode:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+ endif()
+diff --git a/3fd/sqlite/CMakeLists.txt b/3fd/sqlite/CMakeLists.txt
+index 086254d..c1c0966 100644
+--- a/3fd/sqlite/CMakeLists.txt
++++ b/3fd/sqlite/CMakeLists.txt
+@@ -19,7 +19,7 @@ add_definitions(
+ )
+ 
+ # NDEBUG when release mode:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+ endif()
+diff --git a/3fd/utils/CMakeLists.txt b/3fd/utils/CMakeLists.txt
+index a7af0a9..ce8c2ef 100644
+--- a/3fd/utils/CMakeLists.txt
++++ b/3fd/utils/CMakeLists.txt
+@@ -19,7 +19,7 @@ add_definitions(
+ )
+ 
+ # NDEBUG when release mode:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+ endif()
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index d7ab817..2df121b 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2,7 +2,18 @@ cmake_minimum_required(VERSION 3.10)
+ 
+ project(3fd)
+ 
+-add_subdirectory(gtest)
++option(gtest_build_tests "Build 3fd unit and integration tests" OFF)
++
++# Mirror the Visual Studio projects, which compile as Unicode: the code converts
++# _com_error::ErrorMessage() (TCHAR) and nanodbc strings to UTF-8.
++if (MSVC)
++    add_definitions(-DUNICODE -D_UNICODE -DNANODBC_ENABLE_UNICODE -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS)
++endif()
++
++if (gtest_build_tests)
++    add_subdirectory(gtest)
++endif()
++
+ add_subdirectory(nanodbc)
+ add_subdirectory(sqlite3)
+ 
+@@ -12,5 +23,7 @@ add_subdirectory(3fd/sqlite)
+ add_subdirectory(3fd/broker)
+ add_subdirectory(3fd/opencl)
+ 
+-add_subdirectory(UnitTests)
+-add_subdirectory(IntegrationTests)
+\ No newline at end of file
++if (gtest_build_tests)
++    add_subdirectory(UnitTests)
++    add_subdirectory(IntegrationTests)
++endif()
+\ No newline at end of file
+diff --git a/IntegrationTests/CMakeLists.txt b/IntegrationTests/CMakeLists.txt
+index 6e666c3..41e4951 100644
+--- a/IntegrationTests/CMakeLists.txt
++++ b/IntegrationTests/CMakeLists.txt
+@@ -35,7 +35,7 @@ include_directories(
+ #add_library(PocoFoundation STATIC IMPORTED)
+ 
+ # Where the lib binaries are:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+     set_target_properties(3fd-core       PROPERTIES IMPORTED_LOCATION "${CMAKE_CURRENT_BINARY_DIR}/../3fd/core/lib3fd-core.a")
+diff --git a/UnitTests/CMakeLists.txt b/UnitTests/CMakeLists.txt
+index 2017f03..1b7f42c 100644
+--- a/UnitTests/CMakeLists.txt
++++ b/UnitTests/CMakeLists.txt
+@@ -35,7 +35,7 @@ include_directories(
+ #add_library(PocoFoundation STATIC IMPORTED)
+ 
+ # Where the lib binaries are:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+     set_target_properties(3fd-core       PROPERTIES IMPORTED_LOCATION "${CMAKE_CURRENT_BINARY_DIR}/../3fd/core/lib3fd-core.a")
+diff --git a/nanodbc/CMakeLists.txt b/nanodbc/CMakeLists.txt
+index 5571245..1a34985 100644
+--- a/nanodbc/CMakeLists.txt
++++ b/nanodbc/CMakeLists.txt
+@@ -16,7 +16,7 @@ add_definitions(
+ )
+ 
+ # NDEBUG when release mode:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+ endif()
+diff --git a/sqlite3/CMakeLists.txt b/sqlite3/CMakeLists.txt
+index ac4fd69..5e8c473 100644
+--- a/sqlite3/CMakeLists.txt
++++ b/sqlite3/CMakeLists.txt
+@@ -16,7 +16,7 @@ add_definitions(
+ )
+ 
+ # NDEBUG when release mode:
+-string(TOLOWER ${CMAKE_BUILD_TYPE} buildType)
++string(TOLOWER "${CMAKE_BUILD_TYPE}" buildType)
+ if(buildType STREQUAL release)
+     add_definitions(-DNDEBUG)
+ endif()
