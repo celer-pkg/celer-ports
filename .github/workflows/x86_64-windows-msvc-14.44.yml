@@ -77,7 +77,7 @@ jobs:
         run: |
           curl -L -o celer-windows-amd64.exe.zip https://github.com/celer-pkg/celer/releases/latest/download/celer-windows-amd64.exe.zip
           unzip celer-windows-amd64.exe.zip
-          ./celer.exe init --url=https://github.com/celer-pkg/test-conf.git
+          ./celer.exe init --url=https://github.com/celer-pkg/celer-conf.git --force
 
       - name: Check platform match
         id: check_match
@@ -132,7 +132,7 @@ jobs:
           PLATFORM: x86_64-windows-msvc-enterprise-14
         run: |
           # Initialize celer with test-conf repo
-          ./celer.exe init --url=https://github.com/celer-pkg/test-conf.git
+          ./celer.exe init --url=https://github.com/celer-pkg/celer-conf.git --force
           
           # Configure platform
           ./celer.exe configure --platform=$PLATFORM
