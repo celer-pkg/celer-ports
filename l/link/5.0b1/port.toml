@@ -1,0 +1,7 @@
+[package]
+  url = "https://github.com/Ableton/link.git"
+  ref = "Link-5.0b1"
+  depth = 1
+
+[[build_configs]]
+  build_system = "cmake"
