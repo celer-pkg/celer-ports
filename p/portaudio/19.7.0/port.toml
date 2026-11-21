@@ -1,0 +1,11 @@
+[package]
+  url = "https://github.com/PortAudio/portaudio.git"
+  ref = "v19.7.0"
+  depth = 1
+
+[[build_configs]]
+  build_system = "cmake"
+  options = [
+    "-DPA_BUILD_TESTS=OFF",
+    "-DPA_BUILD_EXAMPLES=OFF"
+  ]
