@@ -1,6 +1,6 @@
 [package]
-  url = ""
-  ref = ""
+  url = "https://github.com/an-dr/abcmake.git"
+  ref = "v6.4.0"
 
 [[build_configs]]
-  build_system = ""
+  build_system = "cmake"
