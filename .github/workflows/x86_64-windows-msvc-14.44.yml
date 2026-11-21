@@ -138,7 +138,7 @@ jobs:
           ./celer.exe configure --platform=$PLATFORM
           
           # Configure project
-          ./celer.exe configure --project=project_test_install
+          ./celer.exe configure --project=my_first_project
           
           # Use current checkout instead of cloning ports repo
           rm -rf ports

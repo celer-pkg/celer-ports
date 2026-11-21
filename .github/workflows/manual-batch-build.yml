@@ -124,7 +124,7 @@ jobs:
 
           ./celer init --url=https://github.com/celer-pkg/celer-conf.git --force
           ./celer configure --platform=${{ matrix.platform }}
-          ./celer configure --project=project_test_install
+          ./celer configure --project=my_first_project
 
           rm -rf ports
           ln -s "${{ github.workspace }}" ports
@@ -136,7 +136,7 @@ jobs:
           set -euo pipefail
           ./celer.exe init --url=https://github.com/celer-pkg/celer-conf.git --force
           ./celer.exe configure --platform=${{ matrix.platform }}
-          ./celer.exe configure --project=project_test_install
+          ./celer.exe configure --project=my_first_project
 
           rm -rf ports
           cmd //c "mklink /J ports ${{ github.workspace }}"
