@@ -76,7 +76,7 @@ jobs:
           curl -L -o celer-amd64-linux.tar.gz https://github.com/celer-pkg/celer/releases/latest/download/celer-amd64-linux.tar.gz
           tar -xvzf celer-amd64-linux.tar.gz -C .
           chmod +x celer
-          ./celer init --url=https://github.com/celer-pkg/test-conf.git
+          ./celer init --url=https://github.com/celer-pkg/celer-conf.git --force
 
           PORT_PATH="${{ steps.validate_port.outputs.port_path }}"
           PORT_TOML="${PORT_PATH}/port.toml"
@@ -154,9 +154,9 @@ jobs:
         if: matrix.platform != 'x86_64-windows-msvc-enterprise-14'
         shell: bash
         run: |
-          ./celer init --url=https://github.com/celer-pkg/test-conf.git
+          ./celer init --url=https://github.com/celer-pkg/celer-conf.git --force
           ./celer configure --platform=${{ matrix.platform }}
-          ./celer configure --project=project_test_install
+          ./celer configure --project=my_first_project
           
           rm -rf ports
           ln -s ${{ github.workspace }} ports
@@ -165,9 +165,9 @@ jobs:
         if: matrix.platform == 'x86_64-windows-msvc-enterprise-14'
         shell: bash
         run: |
-          ./celer.exe init --url=https://github.com/celer-pkg/test-conf.git
+          ./celer.exe init --url=https://github.com/celer-pkg/celer-conf.git --force
           ./celer.exe configure --platform=${{ matrix.platform }}
-          ./celer.exe configure --project=project_test_install
+          ./celer.exe configure --project=my_first_project
           
           rm -rf ports
           cmd //c "mklink /J ports ${{ github.workspace }}"
