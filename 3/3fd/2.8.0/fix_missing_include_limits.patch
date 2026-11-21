@@ -1,0 +1,12 @@
+diff --git a/nanodbc/nanodbc.cpp b/nanodbc/nanodbc.cpp
+index 855b727..38a9751 100644
+--- a/nanodbc/nanodbc.cpp
++++ b/nanodbc/nanodbc.cpp
+@@ -25,6 +25,7 @@
+ #include <iomanip>
+ #include <map>
+ #include <type_traits>
++#include <limits>
+ 
+ #ifndef __clang__
+ #include <cstdint>
