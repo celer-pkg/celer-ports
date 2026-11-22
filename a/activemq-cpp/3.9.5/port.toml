@@ -6,11 +6,5 @@
 [[build_configs]]
   build_system = "makefiles"
   system_name_except = "windows"
-  dependencies = ["apr@1.7.6"]
+  dependencies = ["apr@1.7.6", "openssl@1.1.1w"]
   options = ["--host=${HOST}", "--with-apr=${STAGING_DIR}"]
-  post_install_linux = [
-    # 去掉 .pc / activemqcpp-config 里指向临时 staging 的绝对路径
-    "sed -i -E 's#[^[:space:]]*tmp/staging[^[:space:]]*##g' ${PACKAGE_DIR}/lib/pkgconfig/activemq-cpp.pc ${PACKAGE_DIR}/bin/activemqcpp-config",
-    # 让 activemqcpp-config 的 prefix 也可重定位
-    "sed -i 's|^prefix=.*|prefix=$(dirname $(dirname \"$0\"))|' ${PACKAGE_DIR}/bin/activemqcpp-config",
-  ]

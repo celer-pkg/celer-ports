@@ -21,6 +21,3 @@
     "apr_cv_use_lfs64=yes",
     "apr_cv_pthreads_lib=-lpthread",
   ]
-  post_install_linux = [
-    "sed -i 's|^prefix=.*|prefix=$(dirname $(dirname \"$0\"))|' ${PACKAGE_DIR}/bin/apr-1-config",
-  ]
