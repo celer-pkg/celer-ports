@@ -1,0 +1,10 @@
+
+[package]
+  url = "http://www.mirrorservice.org/sites/download.savannah.gnu.org/releases/acl/acl-2.4.0.tar.xz"
+  ref = "2.4.0"
+
+[[build_configs]]
+  system_name_except = "windows"
+  build_system = "makefiles"
+  dependencies = ["attr@2.6.0"]
+  options = ["--host=${HOST}"]
