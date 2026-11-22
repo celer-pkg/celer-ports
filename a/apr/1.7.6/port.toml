@@ -1,0 +1,26 @@
+[package]
+  url = "https://archive.apache.org/dist/apr/apr-1.7.6.tar.gz"
+  ref = "1.7.6"
+
+[[build_configs]]
+  system_name_except = "windows"
+  build_system = "makefiles"
+  options = ["--host=${HOST}"]
+  envs = [
+    # 必须：这些探测在交叉编译时会直接报 "cannot run/check ... while cross compiling"
+    "ac_cv_file__dev_zero=yes",
+    "apr_cv_process_shared_works=yes",
+    "apr_cv_mutex_robust_shared=no",
+    "apr_cv_tcp_nodelay_with_cork=yes",
+    "apr_cv_epoll=yes",
+    "apr_cv_epoll_create1=yes",
+    "apr_cv_dup3=yes",
+    "apr_cv_sock_cloexec=yes",
+    "apr_cv_accept4=yes",
+    "apr_cv_mutex_recursive=yes",
+    "apr_cv_use_lfs64=yes",
+    "apr_cv_pthreads_lib=-lpthread",
+  ]
+  post_install_linux = [
+    "sed -i 's|^prefix=.*|prefix=$(dirname $(dirname \"$0\"))|' ${PACKAGE_DIR}/bin/apr-1-config",
+  ]
