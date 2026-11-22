@@ -1,0 +1,8 @@
+[package]
+  url = "https://github.com/Ableton/link.git"
+  ref = "Link-5.0b1"
+  depth = 1
+
+[[build_configs]]
+  build_system = "cmake"
+  dependencies_linux = ["portaudio@19.7.0", "alsa-lib@1.2.9"]
