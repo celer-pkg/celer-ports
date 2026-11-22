@@ -6,4 +6,5 @@
 [[build_configs]]
   system_name_except = "windows"
   build_system = "makefiles"
+  dependencies = ["attr@2.6.0"]
   options = ["--host=${HOST}"]
