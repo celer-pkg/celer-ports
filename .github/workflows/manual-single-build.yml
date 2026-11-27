@@ -1,5 +1,5 @@
 name: Manual Single Port Build
-run-name: Manual Single Port Build(${{ inputs.port }})
+run-name: Manual Single Port Build(${{ inputs.port }} on ${{ inputs.platform || 'all' }})
 
 on:
   workflow_dispatch:
@@ -8,6 +8,16 @@ on:
         description: 'Port name and version (e.g., poco@1.14.2, zlib@1.3.1, opencv@4.11.0)'
         required: true
         type: string
+      platform:
+        description: 'Target platform (all = build every matching platform)'
+        required: false
+        type: choice
+        default: all
+        options:
+          - all
+          - x86_64-linux-ubuntu-22.04-gcc-11.5.0
+          - aarch64-linux-ubuntu-22.04-gcc-11.5.0
+          - x86_64-windows-msvc-enterprise-14
       verbose:
         description: 'Enable verbose output (--verbose)'
         required: false
@@ -81,6 +91,10 @@ jobs:
           PORT_PATH="${{ steps.validate_port.outputs.port_path }}"
           PORT_TOML="${PORT_PATH}/port.toml"
           
+          # Requested platform ("all" builds every matching platform)
+          REQUESTED_PLATFORM="${{ inputs.platform }}"
+          REQUESTED_PLATFORM="${REQUESTED_PLATFORM:-all}"
+
           # List of available platforms to test
           AVAILABLE_PLATFORMS=(
             "x86_64-linux-ubuntu-22.04-gcc-11.5.0"
@@ -94,6 +108,10 @@ jobs:
           # Find matching platforms
           MATCHING_PLATFORMS=()
           for platform in "${AVAILABLE_PLATFORMS[@]}"; do
+            if [ "$REQUESTED_PLATFORM" != "all" ] && [ "$platform" != "$REQUESTED_PLATFORM" ]; then
+              echo "— -- Skipped (not selected): $platform"
+              continue
+            fi
             if .github/scripts/check_platform_match.sh "$PORT_TOML" "$platform" 2>/dev/null; then
               echo "✓ -- Platform matches: $platform"
               MATCHING_PLATFORMS+=("$platform")
@@ -104,7 +122,11 @@ jobs:
           
           # Check if any platforms matched
           if [ ${#MATCHING_PLATFORMS[@]} -eq 0 ]; then
-            echo "::error::No platforms match the port's build_configs selectors (system_name/system_processor)"
+            if [ "$REQUESTED_PLATFORM" != "all" ]; then
+              echo "::error::Platform '$REQUESTED_PLATFORM' does not match the port's build_configs selectors (system_name/system_processor)"
+            else
+              echo "::error::No platforms match the port's build_configs selectors (system_name/system_processor)"
+            fi
             exit 1
           fi
           
