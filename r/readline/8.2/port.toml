@@ -6,4 +6,10 @@
 [[build_configs]]
   build_system = "makefiles"
   system_name_except = "windows"
+  dependencies_linux = ["ncurses@6.5"]
   options = ["--host=${HOST}", "--with-shared-termcap-library"]
+  options_linux = [
+    "--host=${HOST}",
+    "--with-shared-termcap-library",
+    "bash_cv_termcap_lib=libtinfo",
+  ]
