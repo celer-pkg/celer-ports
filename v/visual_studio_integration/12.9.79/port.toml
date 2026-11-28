@@ -6,6 +6,7 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/visual_studio_integration/windows-x86_64/visual_studio_integration-windows-x86_64-12.9.79-archive.zip"
+  checksum = "d5b6514866395f52f04107da1aa523954f8dc76daf18a9f8699c3d564f294449"
   post_install = [
     "cmake -E copy_directory ${PACKAGE_DIR}/visual_studio_integration ${PACKAGE_DIR}/extras/visual_studio_integration",
     "cmake -E remove_directory ${PACKAGE_DIR}/visual_studio_integration",

@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nvtx/linux-aarch64/cuda_nvtx-linux-aarch64-12.9.79-archive.tar.xz"
+  checksum = "f1a4366e45dbfd0a4e6210a5a4b9b51501aaebb6b58845d3f1b271ec3d7f3e15"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nvtx/linux-x86_64/cuda_nvtx-linux-x86_64-12.9.79-archive.tar.xz"
+  checksum = "819bc39192955e6ba2067de39b85f30e157de462945e54b12bfdeda429d793fb"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nvtx/windows-x86_64/cuda_nvtx-windows-x86_64-12.9.79-archive.zip"
+  checksum = "b9d506ce9ba056bf171b60e9dada06fb3d8bed5453a6399d0541960bf9b81659"

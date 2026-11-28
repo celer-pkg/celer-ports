@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/mft/linux-x86_64/mft-linux-x86_64-4.30.1.510-archive.tar.xz"
+  checksum = "512714ab076d90d88550e60f5da65181363336cee94c67bff8821face8ef10b4"

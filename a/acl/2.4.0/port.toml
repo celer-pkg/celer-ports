@@ -1,6 +1,7 @@
 
 [package]
   url = "http://www.mirrorservice.org/sites/download.savannah.gnu.org/releases/acl/acl-2.4.0.tar.xz"
+  checksum = "e661131456d2708a01c614a0f400e11d7d1bfaeb6f3e74b75bb980b72f0161a3"
   ref = "2.4.0"
 
 [[build_configs]]

@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nvidia_driver/linux-x86_64/nvidia_driver-linux-x86_64-520.61.05-archive.tar.xz"
+  checksum = "c28127087bfd4a865f3c7fcf16c6e5b0c21318d19268b5289c5d825e615888b7"

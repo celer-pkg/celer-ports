@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nsight_compute/linux-aarch64/nsight_compute-linux-aarch64-2025.2.1.3-archive.tar.xz"
+  checksum = "51c7762110c34728acd37878d4340f13612401fa622be0031b1a9e2ce112cfb2"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nsight_compute/linux-x86_64/nsight_compute-linux-x86_64-2025.2.1.3-archive.tar.xz"
+  checksum = "02ab8867197aaf6a6ae3171293d70b6a9ddb20296be94ff4287741338cc2e1df"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nsight_compute/windows-x86_64/nsight_compute-windows-x86_64-2025.2.1.3-archive.zip"
+  checksum = "e9d558654c98d83049969d133b98922b53ab8f4e3ba9e0a37bdb5e2ff300b7de"

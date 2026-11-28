@@ -1,6 +1,7 @@
 [package]
   url = "https://www.x.org/releases/individual/xcb/xcb-util-image-0.4.1.tar.xz"
   ref = "0.4.1"
+  checksum = "ccad8ee5dadb1271fd4727ad14d9bd77a64e505608766c4e98267d9aede40d3d"
 
 [[build_configs]]
   build_system = "makefiles"

@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/visual_studio_integration/windows-x86_64/visual_studio_integration-windows-x86_64-13.3.31-archive.zip"
+  checksum = "a83b8154fe411c3445ff0eaca5f71eaecae596185ba4129a76f2cc4dd878d47e"

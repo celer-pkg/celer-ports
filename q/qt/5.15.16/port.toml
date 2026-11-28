@@ -1,6 +1,7 @@
 [package]
   url = "https://download.qt.io/archive/qt/5.15/5.15.16/single/qt-everywhere-opensource-src-5.15.16.tar.xz"
   ref = "5.15.16"
+  checksum = "efa99827027782974356aceff8a52bd3d2a8a93a54dd0db4cca41b5e35f1041c"
 
 [[build_configs]]
   system_name = "linux"

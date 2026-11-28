@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nsight_compute/linux-x86_64/nsight_compute-linux-x86_64-2026.2.1.5-archive.tar.xz"
+  checksum = "6d1e789b66b963b2b1d5380cb22efa9d94e2ba9f9c1324280c53fced7cf3e385"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nsight_compute/windows-x86_64/nsight_compute-windows-x86_64-2026.2.1.5-archive.zip"
+  checksum = "42749828322bcdec2bd641e910042c562ca6f8d9e2d9623b9368e9a83d0bc94a"

@@ -1,14 +1,16 @@
 [package]
-ref = "17.0.6"
+  ref = "17.0.6"
 
 [[build_configs]]
-system_name = "linux"
-system_processor = "x86_64"
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04.tar.xz"
-build_system = "prebuilt"
+  build_system = "prebuilt"
+  system_name = "linux"
+  system_processor = "x86_64"
+  url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04.tar.xz"
+  checksum = "884ee67d647d77e58740c1e645649e29ae9e8a6fe87c1376be0f3a30f3cc9ab3"
 
 [[build_configs]]
-system_name = "linux"
-system_processor = "aarch64"
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/clang+llvm-17.0.6-aarch64-linux-gnu.tar.xz"
-build_system = "prebuilt"
+  build_system = "prebuilt"
+  system_name = "linux"
+  system_processor = "aarch64"
+  url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/clang+llvm-17.0.6-aarch64-linux-gnu.tar.xz"
+  checksum = "6dd62762285326f223f40b8e4f2864b5c372de3f7de0731cb7cd55ca5287b75a"

@@ -1,6 +1,7 @@
 [package]
   url = "https://ftp.gnu.org/gnu/automake/automake-1.18.tar.xz"
   ref = "1.18"
+  checksum = "5bdccca96b007a7e344c24204b9b9ac12ecd17f5971931a9063bdee4887f4aaf"
   build_tool = true
 
 [[build_configs]]

@@ -1,5 +1,6 @@
 [package]
   url = "https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz"
+  checksum = "87bb028d470fd1b85169349b44c55d5b733733dc2d50ddf1196e026725ead034"
   ref = "3.2.10"
   depth = 1
 

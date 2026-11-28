@@ -1,5 +1,6 @@
 [package]
   url = "https://xkbcommon.org/download/libxkbcommon-1.6.0.tar.xz"
+  checksum = "0edc14eccdd391514458bc5f5a4b99863ed2d651e4dd761a90abf4f46ef99c2b"
   ref = "1.6.0"
 
 [[build_configs]]

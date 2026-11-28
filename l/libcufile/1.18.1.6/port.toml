@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcufile/linux-x86_64/libcufile-linux-x86_64-1.18.1.6-archive.tar.xz"
+  checksum = "5c67df2f09fb5538bf1687e0ad03bbda438f816808049ff4975547b91a6a71a6"

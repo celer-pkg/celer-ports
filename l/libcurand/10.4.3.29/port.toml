@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcurand/linux-x86_64/libcurand-linux-x86_64-10.4.3.29-archive.tar.xz"
+  checksum = "0218e62ab413e435dcd0274ec8e63b62214e6aba8519201061d1597e73caadbb"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcurand/windows-x86_64/libcurand-windows-x86_64-10.4.3.29-archive.zip"
+  checksum = "d3c518485188990666cf9ad848dab40cd0f686a6760344a52fc9eed24acc5b49"

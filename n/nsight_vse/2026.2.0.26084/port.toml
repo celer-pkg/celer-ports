@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nsight_vse/windows-x86_64/nsight_vse-windows-x86_64-2026.2.0.26084-archive.zip"
+  checksum = "5cfb804c1ed8df6805ef9e440418280134a946cdcf418830e79a65a64c63e574"

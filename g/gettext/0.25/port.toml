@@ -1,5 +1,6 @@
 [package]
   url = "https://ftp.gnu.org/gnu/gettext/gettext-0.25.tar.xz"
+  checksum = "05240b29f5b0f422e5a4ef8e9b5f76d8fa059cc057693d2723cdb76f36a88ab0"
   ref = "v0.25"
   build_tool = true
 

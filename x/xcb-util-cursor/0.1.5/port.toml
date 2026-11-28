@@ -1,6 +1,7 @@
 [package]
   url = "https://www.x.org/releases/individual/xcb/xcb-util-cursor-0.1.5.tar.xz"
   ref = "0.1.5"
+  checksum = "0caf99b0d60970f81ce41c7ba694e5eaaf833227bb2cbcdb2f6dc9666a663c57"
 
 [[build_configs]]
   build_system = "makefiles"

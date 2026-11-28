@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_profiler_api/linux-aarch64/cuda_profiler_api-linux-aarch64-12.9.79-archive.tar.xz"
+  checksum = "e26d82b4ce994dc445dc0191b1a5fe68dacc7290bfb9c2133b4979fe90e05433"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_profiler_api/linux-x86_64/cuda_profiler_api-linux-x86_64-12.9.79-archive.tar.xz"
+  checksum = "8c50636bfb97e9420905aa795b9fa6e3ad0b30ec6a6c8b0b8db519beb9241ce6"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_profiler_api/windows-x86_64/cuda_profiler_api-windows-x86_64-12.9.79-archive.zip"
+  checksum = "b05519f8ce4f02167bfc859358f62eb771d89ac2af3a6952a82317f2af4bc5bd"

@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_sanitizer_api/linux-x86_64/cuda_sanitizer_api-linux-x86_64-13.3.75-archive.tar.xz"
+  checksum = "f409be1ba58f44a0a1c826933fa6d557659bfb5b29f4d175979d1cf9c530e3cf"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_sanitizer_api/windows-x86_64/cuda_sanitizer_api-windows-x86_64-13.3.75-archive.zip"
+  checksum = "28946f4ccb0721732239c308c967aea2a5c574fe21653657e0df0d45580d1600"

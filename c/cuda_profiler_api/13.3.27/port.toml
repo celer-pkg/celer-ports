@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_profiler_api/linux-x86_64/cuda_profiler_api-linux-x86_64-13.3.27-archive.tar.xz"
+  checksum = "5aa4df91651f19c2c7c3ac0531cdcd96e18f5227a60efb81b18ca282be719780"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_profiler_api/windows-x86_64/cuda_profiler_api-windows-x86_64-13.3.27-archive.zip"
+  checksum = "b41e9634dee36a7c31e121f636c43ba8b461de03de678bcb918060bd352fa2b8"

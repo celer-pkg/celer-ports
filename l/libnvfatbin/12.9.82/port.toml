@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnvfatbin/linux-aarch64/libnvfatbin-linux-aarch64-12.9.82-archive.tar.xz"
+  checksum = "248e77ede9afbd6060cda7de0475d222731ac021e22e696ce75ed72b426dfca9"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnvfatbin/linux-x86_64/libnvfatbin-linux-x86_64-12.9.82-archive.tar.xz"
+  checksum = "315be969a303437329bf72d7141babed024fc54f90a10aa748b03be8f826d57b"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnvfatbin/windows-x86_64/libnvfatbin-windows-x86_64-12.9.82-archive.zip"
+  checksum = "86563b25096bbc21d74b1c043701ec8596499f76b40e32f9ec9179fc10404d00"

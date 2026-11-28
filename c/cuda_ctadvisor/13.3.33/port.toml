@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_ctadvisor/linux-x86_64/cuda_ctadvisor-linux-x86_64-13.3.33-archive.tar.xz"
+  checksum = "b8019e542f109a5b9ac4df969a15c6cb3372b2eafdcb0f31bacf4c7c183d065b"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_ctadvisor/windows-x86_64/cuda_ctadvisor-windows-x86_64-13.3.33-archive.zip"
+  checksum = "8f23724fdc96b7ed12f0c5981f304a500bdcba8532c779d91e861b6d6b34a71b"

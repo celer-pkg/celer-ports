@@ -1,6 +1,7 @@
 [package]
   url = "https://sourceware.org/pub/valgrind/valgrind-3.26.0.tar.bz2"
   ref = "3.26.0"
+  checksum = "8d54c717029106f1644aadaf802ab9692e53d93dd015cbd19e74190eba616bd7"
   depth = 1
 
 [[build_configs]]

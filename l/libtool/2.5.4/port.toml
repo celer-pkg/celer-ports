@@ -1,5 +1,6 @@
 [package]
   url = "https://ftp.gnu.org/gnu/libtool/libtool-2.5.4.tar.xz"
+  checksum = "f81f5860666b0bc7d84baddefa60d1cb9fa6fceb2398cc3baca6afaa60266675"
   ref = "2.5.4"
   depth = 1
   build_tool = true

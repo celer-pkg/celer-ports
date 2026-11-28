@@ -6,9 +6,11 @@
   system_name = "linux"
   system_processor = "x86_64"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cccl/linux-x86_64/cccl-linux-x86_64-13.3.3.4.1-archive.tar.xz"
+  checksum = "26957cede74f9341174ecaf0372f3f886e7c46ceccb98d6dc775fe2b68d19268"
 
 [[build_configs]]
   build_system = "prebuilt"
   system_name = "windows"
   system_processor = "x86_64"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cccl/windows-x86_64/cccl-windows-x86_64-13.3.3.4.1-archive.zip"
+  checksum = "48fab83097a636c4119da28bd3c9c9af9327e34c1efed17a14449cc2956ca6d1"

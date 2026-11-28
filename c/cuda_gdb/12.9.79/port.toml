@@ -6,9 +6,11 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_gdb/linux-aarch64/cuda_gdb-linux-aarch64-12.9.79-archive.tar.xz"
+  checksum = "5473c27f1ec03fe064a09399e52b251e6ca5d3b9a67f21c1a26a02a26102f165"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_gdb/linux-x86_64/cuda_gdb-linux-x86_64-12.9.79-archive.tar.xz"
+  checksum = "3dbb657683cd4f2989c30bdad31b3f4493795a9acc8a2214f48df3cfca7c37c0"

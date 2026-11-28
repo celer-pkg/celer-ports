@@ -1,5 +1,6 @@
 [package]
   url = "https://www.ijg.org/files/jpegsrc.v9f.tar.gz"
+  checksum = "04705c110cb2469caa79fb71fba3d7bf834914706e9641a4589485c1f832565b"
   archive = "jpeg-9f.tar.gz"
   ref = "9f"
 

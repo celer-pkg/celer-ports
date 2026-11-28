@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nvml_dev/linux-aarch64/cuda_nvml_dev-linux-aarch64-12.9.79-archive.tar.xz"
+  checksum = "531ac94b8b83209657cd14b28d23660df252393fb34c24f5d8919c56c977477e"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nvml_dev/linux-x86_64/cuda_nvml_dev-linux-x86_64-12.9.79-archive.tar.xz"
+  checksum = "1ad0866dbfff6a9e2661f5348e4ca4c2a4e40882b90014ab127f2734856ecccb"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nvml_dev/windows-x86_64/cuda_nvml_dev-windows-x86_64-12.9.79-archive.zip"
+  checksum = "1894b70c5487a739c740929263fa3fbca80e53790647abc02b74eac024b97be8"

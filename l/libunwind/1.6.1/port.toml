@@ -1,5 +1,6 @@
 [package]
   url = "https://download-mirror.savannah.gnu.org/releases/libunwind/libunwind-1.6.1.tar.gz"
+  checksum = "c357991723434a81147b72e27eda140171e6687455e1ea7b95e5e4c2e7065c85"
   ref = "1.6.1"
   depth = 1
 

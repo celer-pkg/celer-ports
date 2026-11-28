@@ -1,6 +1,7 @@
 [package]
   url = "https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz"
   ref = "0.3.10"
+  checksum = "3e15d4f0e22d8ddbfbb9f5d77db43eacd7a304029bf25a6166cc63caa96d04ba"
 
 [[build_configs]]
   build_system = "makefiles"

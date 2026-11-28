@@ -1,5 +1,6 @@
 [package]
   url = "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz"
+  checksum = "92e0e3bd4c02d4aeee76036b2ddd83f0c732ba4cda5cb71d583272b23587a76c"
   ref = "4.20.0"
   depth = 1
 

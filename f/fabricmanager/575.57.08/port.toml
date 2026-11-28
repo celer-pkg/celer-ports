@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/fabricmanager/linux-x86_64/fabricmanager-linux-x86_64-575.57.08-archive.tar.xz"
+  checksum = "2e7dc4db6788e618af345fb50dee63115b5116ccb57d6d27d93c1ff5e2c3a8cf"

@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nsight/linux-x86_64/cuda_nsight-linux-x86_64-11.8.86-archive.tar.xz"
+  checksum = "4568af4eb961fba800b629b9456e4bed82eebf6e4c0c152f83e415b23983699d"

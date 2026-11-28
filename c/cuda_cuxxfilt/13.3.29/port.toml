@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_cuxxfilt/linux-x86_64/cuda_cuxxfilt-linux-x86_64-13.3.29-archive.tar.xz"
+  checksum = "3f15ed0e6b9673d30c4085e7d3819d1e4c17b09056ba5e8aa8eda351c27f5849"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_cuxxfilt/windows-x86_64/cuda_cuxxfilt-windows-x86_64-13.3.29-archive.zip"
+  checksum = "f93a59c6086497603ddec4cd266bb4f5203138109af0a5e14304da3ee12431bd"
