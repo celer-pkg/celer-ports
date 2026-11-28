@@ -1,5 +1,6 @@
 [package]
   url = "https://sourceware.org/elfutils/ftp/0.194/elfutils-0.194.tar.bz2"
+  checksum = "09e2ff033d39baa8b388a2d7fbc5390bfde99ae3b7c67c7daaf7433fbcf0f01e"
   ref = "0.194"
 
 [[build_configs]]

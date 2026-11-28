@@ -1,6 +1,7 @@
 [package]
   url = "https://www.x.org/releases/individual/proto/xproto-7.0.31.tar.gz"
   ref = "7.0.31"
+  checksum = "6d755eaae27b45c5cc75529a12855fed5de5969b367ed05003944cf901ed43c7"
 
 [[build_configs]]
   build_system = "makefiles"

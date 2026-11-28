@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnvptxcompiler/linux-x86_64/libnvptxcompiler-linux-x86_64-13.3.73-archive.tar.xz"
+  checksum = "f92bb1263276341c6a15870548e8f52426b263066a026d469b027263817b281f"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnvptxcompiler/windows-x86_64/libnvptxcompiler-windows-x86_64-13.3.73-archive.zip"
+  checksum = "28123a511d9effd4e0b518baad740566c5bf495f4657efa5ec048ac79c2e5ccf"

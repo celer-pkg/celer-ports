@@ -6,9 +6,11 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nvidia_fs/linux-aarch64/nvidia_fs-linux-aarch64-2.25.7-archive.tar.xz"
+  checksum = "b8c67e28e9e23453183fb7d12ed9fed449427b2c11a21b1de4e7046a57d8d366"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nvidia_fs/linux-x86_64/nvidia_fs-linux-x86_64-2.25.7-archive.tar.xz"
+  checksum = "6e11ec0b885177ab21f4b864ff7417ea3cc1b0994f1c318767984557cd5b29d1"

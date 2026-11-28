@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_culibos/linux-x86_64/cuda_culibos-linux-x86_64-13.1.68-archive.tar.xz"
+  checksum = "0ed07a173e8cf54d26aadd70e851ca03e8aa529d6a09170b54bd2ba98b77c5ec"

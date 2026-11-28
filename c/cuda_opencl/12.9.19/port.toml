@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_opencl/linux-x86_64/cuda_opencl-linux-x86_64-12.9.19-archive.tar.xz"
+  checksum = "1bddacc2f0de77901faad5fecfad8fef8136ea8dd708e02177d10eef97d85b78"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_opencl/windows-x86_64/cuda_opencl-windows-x86_64-12.9.19-archive.zip"
+  checksum = "7c78e05697a3f74510c4154b175ce4597ed0719c7793236ca7f3989eccae0ff6"

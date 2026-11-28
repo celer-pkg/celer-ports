@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/nvlsm/linux-x86_64/nvlsm-linux-x86_64-2025.03.1-archive.tar.xz"
+  checksum = "b034dad10a3154359e244b85206cd73f0fbce8e1cdf76058417b7b562c337388"

@@ -1,6 +1,7 @@
 # Use archive instead of https://github.com/nigels-com/glew.git, because archive contains pre-generated source files(include/CL/*.h)
 [package]
   url = "https://github.com/nigels-com/glew/releases/download/glew-2.3.1/glew-2.3.1.tgz"
+  checksum = "b64790f94b926acd7e8f84c5d6000a86cb43967bd1e688b03089079799c9e889"
   ref = "2.3.1"
   archive = "glew-2.3.1.tgz"
   src_dir = "build/cmake"

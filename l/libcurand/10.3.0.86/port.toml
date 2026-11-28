@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcurand/linux-aarch64/libcurand-linux-aarch64-10.3.0.86-archive.tar.xz"
+  checksum = "56411f5ce1f7c8a0a6a9db0b50f3454321226ad82abf6a189b176efd86587b77"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcurand/linux-x86_64/libcurand-linux-x86_64-10.3.0.86-archive.tar.xz"
+  checksum = "9d30be251c1a0463b52203f6514dac5062844c606d13e234d1386e80c83db279"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcurand/windows-x86_64/libcurand-windows-x86_64-10.3.0.86-archive.zip"
+  checksum = "aaccf56d68a63378edc05109c233ed47e185237c8d334f9df136923440a9a6b7"

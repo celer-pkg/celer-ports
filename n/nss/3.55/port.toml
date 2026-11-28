@@ -1,5 +1,6 @@
 [package]
   url = "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_55_RTM/src/nss-3.55.tar.gz"
+  checksum = "fc692e3db45a082ee6328cd989e795c171a00df9c518df090937f7604f850004"
   ref = "3.55"
   src_dir = "nss"
 

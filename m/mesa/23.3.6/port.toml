@@ -1,5 +1,6 @@
 [package]
   url = "https://archive.mesa3d.org/mesa-23.3.6.tar.xz"
+  checksum = "cd3d6c60121dea73abbae99d399dc2facaecde1a8c6bd647e6d85410ff4b577b"
   ref = "23.3.6"
 
 [[build_configs]]

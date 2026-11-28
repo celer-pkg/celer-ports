@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_sandbox_dev/linux-x86_64/cuda_sandbox_dev-linux-x86_64-12.9.19-archive.tar.xz"
+  checksum = "058c9616f9bb4e57c58996a053cf9a87f655c139dc2fa11af7bed74432bd8153"

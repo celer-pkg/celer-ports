@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnvidia_nscq/linux-x86_64/libnvidia_nscq-linux-x86_64-520.61.05-archive.tar.xz"
+  checksum = "3041cc4b7486e320467bab16350cf51acb84055b36df518b835dd801e18a1ec6"

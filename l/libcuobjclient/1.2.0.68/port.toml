@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcuobjclient/linux-x86_64/libcuobjclient-linux-x86_64-1.2.0.68-archive.tar.xz"
+  checksum = "6cca4342f260a51f9580225db41f7a8d9d5213f4f04674f640bd5ebe9b8fa4fa"

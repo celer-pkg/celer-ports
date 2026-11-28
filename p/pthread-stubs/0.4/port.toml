@@ -1,6 +1,7 @@
 [package]
     url = "https://www.x.org/releases/individual/xcb/libpthread-stubs-0.4.tar.gz"
     ref = "0.4"
+    checksum = "50d5686b79019ccea08bcbd7b02fe5a40634abcfd4146b6e75c6420cc170e9d9"
 
 [[build_configs]]
   system_name = "linux"

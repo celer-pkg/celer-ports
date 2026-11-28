@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcublas/linux-aarch64/libcublas-linux-aarch64-12.9.1.4-archive.tar.xz"
+  checksum = "f75938d72153902cf08d1666311f35851e7eb6a16af743b2346bc68d7ba6b341"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcublas/linux-x86_64/libcublas-linux-x86_64-12.9.1.4-archive.tar.xz"
+  checksum = "546addc4a9d82b8f23aa9ba9274b6bc0429a63008a31c759884ac24880796057"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcublas/windows-x86_64/libcublas-windows-x86_64-12.9.1.4-archive.zip"
+  checksum = "d534d98b0b453a98914dbf3adf47d7e84b55037abf02f87466439e1dcef581ed"

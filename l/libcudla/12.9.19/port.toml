@@ -6,3 +6,4 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libcudla/linux-aarch64/libcudla-linux-aarch64-12.9.19-archive.tar.xz"
+  checksum = "ef7c1a05d9927c53aa089ec2217a1e999ffac0e776145d798bf784279fc79d40"

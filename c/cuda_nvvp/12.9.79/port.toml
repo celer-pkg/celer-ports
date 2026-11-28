@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nvvp/linux-x86_64/cuda_nvvp-linux-x86_64-12.9.79-archive.tar.xz"
+  checksum = "6cdf9196373a848856c1afc6f1df1023649fb5fe77b896967ecc0b014b200003"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_nvvp/windows-x86_64/cuda_nvvp-windows-x86_64-12.9.79-archive.zip"
+  checksum = "a7e1ac0de34c69afc288283ea75314b67f109b08d046c3622405dff8f66b0720"

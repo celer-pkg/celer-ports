@@ -6,3 +6,4 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/imex/linux-x86_64/nvidia-imex-linux-x86_64-575.57.08-archive.tar.xz"
+  checksum = "5dfe195429b0967788b7e9b4bab85d4936220d6d2f6cf394a61bd3439b437506"

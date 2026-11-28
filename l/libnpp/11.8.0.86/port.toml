@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnpp/linux-aarch64/libnpp-linux-aarch64-11.8.0.86-archive.tar.xz"
+  checksum = "1ef920c64610e03933ed94fc1dd34377c298c35bca83b9e864114dd7ad512c58"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnpp/linux-x86_64/libnpp-linux-x86_64-11.8.0.86-archive.tar.xz"
+  checksum = "1aaacf07e4df2dda5f6246763fc89c1bb9af9d4723596f4530826bcae148f9b4"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/libnpp/windows-x86_64/libnpp-windows-x86_64-11.8.0.86-archive.zip"
+  checksum = "5cd2ba50234b0743242bab212bf742c114e274fd639ec9d79fd62e1295756d32"

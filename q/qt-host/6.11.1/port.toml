@@ -1,6 +1,7 @@
 [package]
   url = "https://download.qt.io/archive/qt/6.11/6.11.1/single/qt-everywhere-src-6.11.1.tar.xz"
   ref = "6.11.1"
+  checksum = "252acef8c5ae68074d91cadba2ee4a83465051bbb970dd26e8f0daa0f3904e03"
 
 [[build_configs]]
   build_system = "cmake"

@@ -1,5 +1,6 @@
 [package]
   url = "https://ffmpeg.org/releases/ffmpeg-3.4.13.tar.xz"
+  checksum = "fb6bb7f1cff858430343e449955f7c6b134fc7ffee4d1f8fcda7e686a9f2e05a"
   ref = "3.4.13"
 
 # ================ build for Linux ================ #

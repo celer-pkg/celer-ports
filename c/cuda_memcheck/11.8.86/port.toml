@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_memcheck/linux-x86_64/cuda_memcheck-linux-x86_64-11.8.86-archive.tar.xz"
+  checksum = "539ce6b3cf03593f72f7830217145c87f94246b1c8c056fde2da82234aba2a3e"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_memcheck/windows-x86_64/cuda_memcheck-windows-x86_64-11.8.86-archive.zip"
+  checksum = "387339972a16daefb5aca029d9d8d9c5f2fc8d823ccd4f4b89d2a2767f19dc2d"

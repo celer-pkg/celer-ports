@@ -98,7 +98,7 @@ Celer expands variables in `options`, hooks, and related string fields. The most
 - `${STAGING_DIR}`
 - `${DEV_STAGING_DIR}`
 
-See `docs/en-US/article_port.md` and `docs/en-US/article_expvars.md` for deeper background.
+See `docs/en-US/base_practice_port.md` and `docs/en-US/base_practice_expvars.md` for deeper background.
 
 ## Minimal example
 
@@ -132,8 +132,8 @@ On Windows, `options_windows` replaces `options`, so repeat any shared options y
 ## Related
 
 - [Root README](../README.md)
-- [Port details](../docs/en-US/article_port.md)
-- [Expression variables](../docs/en-US/article_expvars.md)
+- [Port details](../docs/en-US/base_practice_port.md)
+- [Expression variables](../docs/en-US/base_practice_expvars.md)
 
 ## License
 

@@ -2,6 +2,7 @@
 [package]
   url = "https://archive.apache.org/dist/activemq/activemq-cpp/3.9.5/activemq-cpp-library-3.9.5-src.tar.gz"
   ref = "3.9.5"
+  checksum = "5858106f21bb541d5a3947906731a2187b00dc91870fa4e02866a03e98bea292"
 
 [[build_configs]]
   build_system = "makefiles"

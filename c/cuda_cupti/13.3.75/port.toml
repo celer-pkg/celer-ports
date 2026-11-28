@@ -6,9 +6,11 @@
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_cupti/linux-x86_64/cuda_cupti-linux-x86_64-13.3.75-archive.tar.xz"
+  checksum = "5f9df946729a39830ebee4f3467cd28b5bf05740bf753fb780706e66531cc53e"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_cupti/windows-x86_64/cuda_cupti-windows-x86_64-13.3.75-archive.zip"
+  checksum = "298eb0dfbd7eb63b63aab0533b4ba1ab2542c2ea03842a744973c7f38d0982b3"

@@ -6,15 +6,18 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_sanitizer_api/linux-aarch64/cuda_sanitizer_api-linux-aarch64-12.9.79-archive.tar.xz"
+  checksum = "2baaba3ff47eceb529ddcc866fc7e647fd02427ef3dbb8bec06689f919c14c69"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_sanitizer_api/linux-x86_64/cuda_sanitizer_api-linux-x86_64-12.9.79-archive.tar.xz"
+  checksum = "e23aad21132ff58b92a22aad372a7048793400b79c625665d325d4ecec6979bf"
 
 [[build_configs]]
   system_name = "windows"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/cuda_sanitizer_api/windows-x86_64/cuda_sanitizer_api-windows-x86_64-12.9.79-archive.zip"
+  checksum = "b1f366312cb52164dfe7b78463ab085b742f052e74b89e9da08561a8ca8b06e9"

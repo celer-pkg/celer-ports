@@ -6,9 +6,11 @@
   system_processor = "aarch64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/driver_assistant/source/driver_assistant-0.21.57.08-archive.tar.xz"
+  checksum = "4904c08e1de1aa790d200f36528aaa672ab6b3c6620bbfe5e221312b9ef1120a"
 
 [[build_configs]]
   system_name = "linux"
   system_processor = "x86_64"
   build_system = "prebuilt"
   url = "https://developer.download.nvidia.cn/compute/cuda/redist/driver_assistant/source/driver_assistant-0.21.57.08-archive.tar.xz"
+  checksum = "4904c08e1de1aa790d200f36528aaa672ab6b3c6620bbfe5e221312b9ef1120a"
